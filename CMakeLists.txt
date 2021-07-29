@@ -5,6 +5,8 @@ include(GNUInstallDirs)
 
 option(BUILD_EXAMPLES "Build example apps" ON)
 
+set (CMAKE_CXX_FLAGS "-fPIE -fPIC")
+
 # format
 file(GLOB_RECURSE ALL_SOURCE_FILES
     examples/*.cpp examples/*.h examples/*.c
